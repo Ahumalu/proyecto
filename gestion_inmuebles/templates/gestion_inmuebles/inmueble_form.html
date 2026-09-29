@@ -1,0 +1,12 @@
+<!-- templates/gestion_inmuebles/inmueble_form.html -->
+{% if editar %}
+    <h2>Editar Inmueble</h2>
+{% else %}
+    <h2>Agregar Nuevo Inmueble</h2>
+{% endif %}
+
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Guardar</button>
+</form>

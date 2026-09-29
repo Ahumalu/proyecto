@@ -1,0 +1,40 @@
+<!-- templates/gestion_inmuebles/perfil.html -->
+<h2>Mi Perfil</h2>
+
+<p><strong>Nombre de usuario:</strong> {{ user.username }}</p>
+
+<p><a href="{% url 'listado_inmuebles' %}">Ver inmuebles disponibles</a></p>
+
+{% if usuario %}
+    <h3>Editar mis datos</h3>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Guardar cambios</button>
+    </form>
+
+    {% if usuario.tipo_usuario == 'arrendador' %}
+        <h3>Mis inmuebles</h3>
+        <p><a href="{% url 'crear_inmueble' %}">Agregar nuevo inmueble</a></p>
+
+        <ul>
+        {% for inmueble in mis_inmuebles %}
+            <li>
+                {{ inmueble.nombre }} — {{ inmueble.comuna }}
+                <a href="{% url 'editar_inmueble' inmueble.id %}">Editar</a>
+                |
+                <a href="{% url 'borrar_inmueble' inmueble.id %}">Eliminar</a>
+            </li>
+        {% empty %}
+            <li>Aún no tienes inmuebles publicados.</li>
+        {% endfor %}
+        </ul>
+    {% endif %}
+{% else %}
+    <p>Esta cuenta no tiene un perfil de usuario asociado.</p>
+{% endif %}
+
+<form method="post" action="{% url 'logout' %}">
+    {% csrf_token %}
+    <button type="submit">Cerrar sesión</button>
+</form>

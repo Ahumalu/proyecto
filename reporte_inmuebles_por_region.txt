@@ -1,0 +1,37 @@
+=== LISTADO DE INMUEBLES POR REGIÓN (usando ORM de Django) ===
+
+Región: Biobío
+  - Nombre: Oficina Centro Concepción
+    Descripción: Oficina moderna en pleno centro, ideal para emprendimientos.
+
+Región: Coquimbo
+  - Nombre: Parcela El Mirador
+    Descripción: Parcela de agrado con árboles frutales y vista a la cordillera.
+
+Región: Metropolitana de Santiago
+  - Nombre: Casa Los Alerces
+    Descripción: Amplia casa de un piso con jardín y quincho, ideal para familias.
+  - Nombre: Depto Vista Sur
+    Descripción: Departamento luminoso con vista despejada, cercano al metro.
+
+Región: Valparaíso
+  - Nombre: Local Comercial Viña
+    Descripción: Local a pasos de la playa, alto flujo peatonal.
+
+
+=== LISTADO DE INMUEBLES POR REGIÓN (usando SQL directo) ===
+
+Región: Biobío
+  - Nombre: Oficina Centro Concepción
+    Descripción: Oficina moderna en pleno centro, ideal para emprendimientos.
+Región: Coquimbo
+  - Nombre: Parcela El Mirador
+    Descripción: Parcela de agrado con árboles frutales y vista a la cordillera.
+Región: Metropolitana de Santiago
+  - Nombre: Depto Vista Sur
+    Descripción: Departamento luminoso con vista despejada, cercano al metro.
+  - Nombre: Casa Los Alerces
+    Descripción: Amplia casa de un piso con jardín y quincho, ideal para familias.
+Región: Valparaíso
+  - Nombre: Local Comercial Viña
+    Descripción: Local a pasos de la playa, alto flujo peatonal.

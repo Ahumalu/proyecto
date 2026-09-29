@@ -1,0 +1,145 @@
+[
+  {
+    "model": "gestion_inmuebles.usuario",
+    "pk": 1,
+    "fields": {
+      "nombres": "Camila",
+      "apellidos": "Rojas Díaz",
+      "rut": "12345678-9",
+      "direccion": "Av. Providencia 1234",
+      "telefono": "+56912345678",
+      "correo": "camila.rojas@example.com",
+      "tipo_usuario": "arrendador"
+    }
+  },
+  {
+    "model": "gestion_inmuebles.usuario",
+    "pk": 2,
+    "fields": {
+      "nombres": "Francisco",
+      "apellidos": "Muñoz Soto",
+      "rut": "13456789-0",
+      "direccion": "Calle Los Aromos 456",
+      "telefono": "+56923456789",
+      "correo": "francisco.munoz@example.com",
+      "tipo_usuario": "arrendador"
+    }
+  },
+  {
+    "model": "gestion_inmuebles.usuario",
+    "pk": 3,
+    "fields": {
+      "nombres": "Valentina",
+      "apellidos": "Pérez Contreras",
+      "rut": "14567890-1",
+      "direccion": "Pasaje Las Rosas 789",
+      "telefono": "+56934567890",
+      "correo": "valentina.perez@example.com",
+      "tipo_usuario": "arrendatario"
+    }
+  },
+  {
+    "model": "gestion_inmuebles.usuario",
+    "pk": 4,
+    "fields": {
+      "nombres": "Matías",
+      "apellidos": "González Fuentes",
+      "rut": "15678901-2",
+      "direccion": "Av. Independencia 321",
+      "telefono": "+56945678901",
+      "correo": "matias.gonzalez@example.com",
+      "tipo_usuario": "arrendatario"
+    }
+  },
+
+  {
+    "model": "gestion_inmuebles.inmueble",
+    "pk": 1,
+    "fields": {
+      "arrendador": 1,
+      "nombre": "Casa Los Alerces",
+      "descripcion": "Amplia casa de un piso con jardín y quincho, ideal para familias.",
+      "m2_construidos": 120.0,
+      "m2_totales": 200.0,
+      "estacionamientos": 2,
+      "habitaciones": 4,
+      "banos": 2,
+      "direccion": "Calle Los Alerces 1500",
+      "comuna": 19,
+      "tipo_inmueble": 1,
+      "precio_mensual": "650000.00"
+    }
+  },
+  {
+    "model": "gestion_inmuebles.inmueble",
+    "pk": 2,
+    "fields": {
+      "arrendador": 1,
+      "nombre": "Depto Vista Sur",
+      "descripcion": "Departamento luminoso con vista despejada, cercano al metro.",
+      "m2_construidos": 55.0,
+      "m2_totales": 55.0,
+      "estacionamientos": 1,
+      "habitaciones": 2,
+      "banos": 1,
+      "direccion": "Av. Providencia 2200",
+      "comuna": 17,
+      "tipo_inmueble": 2,
+      "precio_mensual": "480000.00"
+    }
+  },
+  {
+    "model": "gestion_inmuebles.inmueble",
+    "pk": 3,
+    "fields": {
+      "arrendador": 2,
+      "nombre": "Parcela El Mirador",
+      "descripcion": "Parcela de agrado con árboles frutales y vista a la cordillera.",
+      "m2_construidos": 80.0,
+      "m2_totales": 5000.0,
+      "estacionamientos": 3,
+      "habitaciones": 3,
+      "banos": 2,
+      "direccion": "Camino El Mirador km 5",
+      "comuna": 12,
+      "tipo_inmueble": 3,
+      "precio_mensual": "550000.00"
+    }
+  },
+  {
+    "model": "gestion_inmuebles.inmueble",
+    "pk": 4,
+    "fields": {
+      "arrendador": 2,
+      "nombre": "Oficina Centro Concepción",
+      "descripcion": "Oficina moderna en pleno centro, ideal para emprendimientos.",
+      "m2_construidos": 40.0,
+      "m2_totales": 40.0,
+      "estacionamientos": 0,
+      "habitaciones": 1,
+      "banos": 1,
+      "direccion": "Barros Arana 800",
+      "comuna": 27,
+      "tipo_inmueble": 4,
+      "precio_mensual": "320000.00"
+    }
+  },
+  {
+    "model": "gestion_inmuebles.inmueble",
+    "pk": 5,
+    "fields": {
+      "arrendador": 1,
+      "nombre": "Local Comercial Viña",
+      "descripcion": "Local a pasos de la playa, alto flujo peatonal.",
+      "m2_construidos": 60.0,
+      "m2_totales": 60.0,
+      "estacionamientos": 0,
+      "habitaciones": 0,
+      "banos": 1,
+      "direccion": "Av. San Martín 450",
+      "comuna": 14,
+      "tipo_inmueble": 5,
+      "precio_mensual": "700000.00"
+    }
+  }
+]

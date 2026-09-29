@@ -1,0 +1,8 @@
+<!-- templates/gestion_inmuebles/inmueble_confirmar_borrado.html -->
+<h2>Confirmar eliminación</h2>
+<p>¿Estás seguro de que deseas eliminar el inmueble "{{ inmueble.nombre }}"? Esta acción no se puede deshacer.</p>
+
+<form method="post">
+    {% csrf_token %}
+    <button type="submit">Sí, eliminar</button>
+</form>

@@ -1,0 +1,16 @@
+<!-- templates/gestion_inmuebles/listado_inmuebles.html -->
+<h2>Inmuebles Disponibles para Arriendo</h2>
+
+<ul>
+{% for inmueble in inmuebles %}
+    <li>
+        <strong>{{ inmueble.nombre }}</strong> — {{ inmueble.tipo_inmueble }} en {{ inmueble.comuna }}<br>
+        {{ inmueble.descripcion }}<br>
+        {{ inmueble.habitaciones }} habitaciones, {{ inmueble.banos }} baños, {{ inmueble.m2_construidos }} m² construidos<br>
+        Precio mensual: ${{ inmueble.precio_mensual }}
+    </li>
+    <hr>
+{% empty %}
+    <li>No hay inmuebles disponibles por el momento.</li>
+{% endfor %}
+</ul>
